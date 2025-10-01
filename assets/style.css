@@ -1,0 +1,190 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c93737;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* About link styling */
+.about-link {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.about-link a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.about-link a:hover {
+    text-decoration: underline;
+}
+
+/* Main container */
+.container {
+    text-align: center;
+    color: white;
+}
+
+/* Clear text styling */
+.clear-text {
+    font-size: 60px;
+    font-weight: normal;
+    letter-spacing: 10px;
+    margin-bottom: 30px;
+}
+
+/* Time display styling */
+.time-display {
+    font-size: 100px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    letter-spacing: 5px;
+}
+
+/* Buttons container - responsive layout */
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+/* Stack buttons vertically on mobile */
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Main start/stop button */
+.main-button {
+    background-color: #f4d47c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 300px;
+    height: 240px;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.main-button:hover {
+    background-color: #f0c860;
+    transform: translateY(-5px);
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.4);
+}
+
+.main-button:active {
+    transform: translateY(0px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Reset button */
+.reset-button {
+    background-color: #f4d47c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 300px;
+    height: 240px;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.reset-button:hover {
+    background-color: #f0c860;
+    transform: translateY(-5px);
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.4);
+}
+
+.reset-button:active {
+    transform: translateY(0px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+    .clear-text {
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+    
+    .time-display {
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+    
+    .main-button {
+        width: 220px;
+        height: 180px;
+        font-size: 22px;
+    }
+    
+    .reset-button {
+        width: 220px;
+        height: 180px;
+        font-size: 22px;
+    }
+    
+    .buttons {
+        gap: 25px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .clear-text {
+        font-size: 30px;
+    }
+    
+    .time-display {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    
+    .main-button {
+        width: 180px;
+        height: 140px;
+        font-size: 18px;
+    }
+    
+    .reset-button {
+        width: 180px;
+        height: 140px;
+        font-size: 18px;
+    }
+    
+    .buttons {
+        gap: 20px;
+    }
+    
+    .copyright {
+        font-size: 12px;
+    }
+    
+    .about-link a {
+        font-size: 18px;
+    }
+}
